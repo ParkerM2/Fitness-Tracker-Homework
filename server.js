@@ -6,11 +6,15 @@ const PORT = 8080;
 
 const app = express();
 
-mongoose.connect("mongodb://localhost/Workout",
+mongoose.connect(process.env.MONGO_URL || "mongodb://localhost/Workout",
   {
   useNewUrlParser: true,
   useFindAndModify: false
-});
+  });
+
+mongoose.connection.on("connected", () => {
+  console.log("Mongoose connected")
+})
 
 
 
