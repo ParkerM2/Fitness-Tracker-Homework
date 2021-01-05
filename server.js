@@ -30,9 +30,9 @@ process.env.MONGODB_URI || 'mongodb://localhost/fitnesstracker123456',
     })
 
 // Call Express Routes
-app.use(require("./routes/api-routes.js"));
+app.use(require("./routes/api.js"));
 
-app.use(require("./routes/htmlRoutes.js"));
+app.use(require("./routes/view.js"));
 
 
 // Start the server
