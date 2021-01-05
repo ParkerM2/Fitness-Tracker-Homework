@@ -13,7 +13,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost/enigmatic-citadel-52146",
+mongoose.connect("mongodb://localhost/Workout",
   {
   useNewUrlParser: true,
   useFindAndModify: false
