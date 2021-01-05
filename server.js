@@ -13,7 +13,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost/fitness", {
+mongoose.connect("mongodb://localhost/fitnesstracker123456", {
   useNewUrlParser: true,
   useFindAndModify: false
 });
